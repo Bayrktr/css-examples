@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+a{
+    font-family: Calibri;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+
+ul{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 50px;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+
+img{
+    width: 125px;
+    height: 75px;
+}
+
+i{
+    margin-left: 2px;
+}
+
+
+.main{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dergi{
+    background-color: red;
+    width: 60%;
+    height: 40%;
+    margin-bottom: 50px;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+}
+
+.drowdown-items{
+    margin: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.drowdown{
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.drowdown-items a:hover{
+    opacity: 0.6;
+}
+
+.drowdown-items a{
+    opacity: 0.8;
+}
+
+.animation1{
+    position: absolute;
+    margin: 10px;
+}
+
+.animation{
+    display: inline-block;
+    position: relative;
+    transition: all 5s ease-in;
+}
+
+.animation:hover .drowdown{
+    display: block;
+    height: 100px
+}
+
+.animation:first-child{
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.8s ease-out;
+}
+
+.animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
