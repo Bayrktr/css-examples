@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.body{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+h2{
+    margin-top: 50px;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+p{
+    color: white;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    font-family: "Candara Light";
+}
